@@ -14,4 +14,8 @@ public interface CompanyService {
 	Company updateCompany(Long id, Company company) throws ValidationException;
 	
 	void deleteCompany(Long id);
+
+    Company getCompanyRecordById(Long id);
+
+    Company getCompanyRecordByCompanyCode(String companyCode);
 }
